@@ -7,11 +7,15 @@ import BrowserApp.pageobjects.homepage.FirebaseAppHomePage;
 
 public class FirebaseAppHomepageTest extends BaseTest{
 
+    FirebaseAppHomePage firebaseAppHomePage;
+
+
     @Test
     public void homepageTests() {
-        FirebaseAppHomePage firebaseAppHomePage = new FirebaseAppHomePage(getDriver());
+        firebaseAppHomePage = new FirebaseAppHomePage(getDriver());
         firebaseAppHomePage.openHomePage();
 
-
     }
+
+
 }

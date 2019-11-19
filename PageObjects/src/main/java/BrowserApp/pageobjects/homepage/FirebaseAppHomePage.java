@@ -1,5 +1,6 @@
 package BrowserApp.pageobjects.homepage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import BrowserApp.framework.core.BasePage;
 import org.openqa.selenium.WebElement;
@@ -15,11 +16,16 @@ public class FirebaseAppHomePage extends BasePage {
     }
 
 
-    @FindBy(how = How.ID, using = "u_0_2")
+    @FindBy(how = How.XPATH, using = "/html/body/note-app//na-login//paper-button")
     public WebElement loginButton;
 
     public void openHomePage() {
         driver.get(url);
+    }
+
+
+    public void clickLogIn(){
+        loginButton.click();
     }
 
 
