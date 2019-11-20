@@ -3,6 +3,7 @@ package BrowserApp.framework.core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,5 +33,9 @@ public class BasePage {
 
     protected void waitForTextToDisappear(By locator, String text) {
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
+    }
+
+    protected void waitForElementToBeLoaded(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 }

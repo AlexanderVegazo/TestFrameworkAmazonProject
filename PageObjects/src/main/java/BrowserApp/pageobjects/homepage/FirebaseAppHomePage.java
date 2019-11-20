@@ -1,5 +1,6 @@
 package BrowserApp.pageobjects.homepage;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import BrowserApp.framework.core.BasePage;
 import org.openqa.selenium.WebElement;
@@ -15,14 +16,27 @@ public class FirebaseAppHomePage extends BasePage {
     }
 
 
-    @FindBy(how = How.ID, using = "u_0_2")
+    @FindBy(how = How.CSS, using = "note-app")
     public WebElement loginButton;
+
+
 
     public void openHomePage() {
         driver.get(url);
     }
 
 
+    public void clickLogIn(){
+        waitForElementToBeLoaded(loginButton);
+        loginButton.click();
+      //  System.out.println(loginButton.getText());
+    }
+
+    public void clickLogOff(){
+        waitForElementToBeLoaded(loginButton);
+        loginButton.click();
+        //  System.out.println(loginButton.getText());
+    }
 
 
 }
