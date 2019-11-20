@@ -16,7 +16,7 @@ public class FirebaseAppHomePage extends BasePage {
     }
 
 
-    @FindBy(how = How.XPATH, using = "/html/body/note-app//na-login//paper-button")
+    @FindBy(how = How.CSS, using = "note-app")
     public WebElement loginButton;
 
     public void openHomePage() {
@@ -25,6 +25,7 @@ public class FirebaseAppHomePage extends BasePage {
 
 
     public void clickLogIn(){
+        waitForElementToBeLoaded(loginButton);
         loginButton.click();
     }
 
