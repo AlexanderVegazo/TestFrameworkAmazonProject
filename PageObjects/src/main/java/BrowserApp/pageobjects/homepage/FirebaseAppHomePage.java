@@ -19,6 +19,8 @@ public class FirebaseAppHomePage extends BasePage {
     @FindBy(how = How.CSS, using = "note-app")
     public WebElement loginButton;
 
+
+
     public void openHomePage() {
         driver.get(url);
     }
@@ -27,9 +29,14 @@ public class FirebaseAppHomePage extends BasePage {
     public void clickLogIn(){
         waitForElementToBeLoaded(loginButton);
         loginButton.click();
+      //  System.out.println(loginButton.getText());
     }
 
-
+    public void clickLogOff(){
+        waitForElementToBeLoaded(loginButton);
+        loginButton.click();
+        //  System.out.println(loginButton.getText());
+    }
 
 
 }

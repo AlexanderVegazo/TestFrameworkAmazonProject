@@ -17,7 +17,7 @@ public class FirebaseAppHomepageTest extends BaseTest{
         firebaseAppHomePage = new FirebaseAppHomePage(getDriver());
         firebaseAppHomePage.openHomePage();
         firebaseAppHomePage.clickLogIn();
-
+        firebaseAppHomePage.clickLogIn();
 
 
 
