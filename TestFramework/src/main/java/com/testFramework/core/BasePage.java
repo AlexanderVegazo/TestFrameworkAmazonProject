@@ -1,4 +1,4 @@
-package BrowserApp.framework.core;
+package com.testFramework.core;
 
 
 import org.openqa.selenium.By;
@@ -37,5 +37,9 @@ public class BasePage {
 
     protected void waitForElementToBeLoaded(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    protected void waitForElementToBePresent(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 }

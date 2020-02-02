@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="FirebaseAppTest" target="1.8" />
+      <module name="AmazonProject" target="1.8" />
       <module name="PageObjects" target="1.8" />
       <module name="RegressionTests" target="1.8" />
       <module name="TestFramework" target="1.8" />

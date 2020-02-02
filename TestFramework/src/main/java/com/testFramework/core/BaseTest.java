@@ -1,4 +1,4 @@
-package BrowserApp.framework.core;
+package com.testFramework.core;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.junit.AfterClass;
